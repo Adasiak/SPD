@@ -1,0 +1,4 @@
+ll = [1,2,3,4,5,6,7]
+
+for lq in enumerate(ll):
+    print(type(ll[lq]))
