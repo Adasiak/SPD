@@ -71,7 +71,7 @@ if __name__ == "__main__":
         
         ll.append(m)
 
-    for i in range(45):
+    for i in range(22):
         # print(i)
         # n = int(m)
         print(ll[i])
