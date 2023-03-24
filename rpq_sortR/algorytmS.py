@@ -81,8 +81,7 @@ if __name__ == "__main__":
         tmp_dict = {cmax :ex_time}
         cmaxs.append(cmax)
         extimes.append(ex_time)
-    
-    aa = 0
+   
     print(ll)
         
     with open(f'cmaxs.txt', 'w') as file:

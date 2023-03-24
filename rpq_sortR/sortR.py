@@ -21,12 +21,12 @@ def algorytmS(tasks):
     # Obliczanie całkowitego czasu wykonywania wszytskich zadań
     for task in tasks:
         current_time = max(current_time, task[0]) + task[1]
-        tmp_list = [task for task in tasks[tasks.index(task)+1::] if task[0] <= current_time ]
-        # gdy pozostałe elementy mają czas przybycia mniejszy niż obceny czas
-        # następuje odwrotne sortowanie po czasie dostarczenia
-        tmp_list = sorted(tmp_list, key=lambda x: (-x[2]))
-        for tmp_list_index in range(len(tmp_list)):
-            tasks[tasks.index(task)+1+tmp_list_index] = tmp_list[tmp_list_index]
+        # tmp_list = [task for task in tasks[tasks.index(task)+1::] if task[0] <= current_time ]
+        # # gdy pozostałe elementy mają czas przybycia mniejszy niż obceny czas
+        # # następuje odwrotne sortowanie po czasie dostarczenia
+        # tmp_list = sorted(tmp_list, key=lambda x: (-x[2]))
+        # for tmp_list_index in range(len(tmp_list)):
+        #     tasks[tasks.index(task)+1+tmp_list_index] = tmp_list[tmp_list_index]
         
         cmax = max(cmax, current_time)
     
